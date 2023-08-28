@@ -1,9 +1,17 @@
-main,
-html {
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Courier, monospace;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .logo-img {
