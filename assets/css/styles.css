@@ -41,7 +41,7 @@ main {
 }
 
 .slide img {
-    height: 91vh;
+    height: 45vh;
     object-fit: cover;
 }
 
@@ -107,6 +107,13 @@ btn {
 
 .search:hover i {
     transform: rotate(-360deg);
+}
+
+#resultado{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #382f32;
+
 }
 
 /*cards*/
@@ -201,20 +208,22 @@ tr, td,th {
     width: 33.33%;
 }
 
-/*details*/
+/* details */
 .details {
     display: flex;
     justify-content: center;
 }
-.card-text {
-    text-align: left!important;
-}
-
 .img-fluid {
     width: auto;
     height: 100%;
     object-fit: cover;
 }
+
+.card-text {
+    text-align: left!important;
+}
+
+
 .card {
     max-width: 800px;
 }
@@ -224,4 +233,8 @@ tr, td,th {
 
 .col-md-8 {
     width: 56%;
+}
+
+.me-2 {
+    width: 85%;
 }
