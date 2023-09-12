@@ -17,7 +17,8 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img class="logo-img" src="./assets/img/amazing_brand.png" alt="Logo"></a>
+            <a class="navbar-brand" href="./index.html"><img class="logo-img" src="./assets/img/amazing_brand.png"
+                    alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -89,6 +90,7 @@
 
     </header>
 
+
     <main>
         <div class="stats">
             <div class="border border-primary-subtle rounded-3">
@@ -97,7 +99,7 @@
                         <h5>Events Statistics</h5>
                     </caption>
                     <thead>
-                        <tr >
+                        <tr>
                             <th scope="col">Events with highest % of assistance</th>
                             <th scope="col">Events with lowest % of assistance</th>
                             <th scope="col">Events with larger capacity</th>
@@ -105,15 +107,16 @@
                     </thead>
                     <tbody class="table-group-divider">
                         <tr>
-                            <th scope="row"></th>
-                            <td></td>
-                            <td></td>
+                            <th scope="row" id="highestAssistanceCell"></th>
+                            <td id="lowestAssistanceCell"></td>
+                            <td id="largestCapacityCell"></td>
                         </tr>
 
                 </table>
                 <table class="table table-responsive caption-top align-middle">
                     <caption>
-                        <h5 >Upcoming events statistics by category</h5></caption>
+                        <h5>Upcoming events statistics by category</h5>
+                    </caption>
                     <thead>
                         <tr>
                             <th scope="col">Categories</th>
@@ -121,7 +124,7 @@
                             <th scope="col">Percentage of assistance</th>
                         </tr>
                     </thead>
-                    <tbody class="table-group-divider">
+                    <tbody id="upcomingEventsTableBody" class="table-group-divider">
                         <tr>
                             <th scope="row"></th>
                             <td></td>
@@ -136,15 +139,17 @@
                     </tbody>
                 </table>
                 <table class="table table-responsive caption-top align-middle">
-                    <caption><h5>Past events statistics by category</h5></caption>
-                    <thead >
+                    <caption>
+                        <h5>Past events statistics by category</h5>
+                    </caption>
+                    <thead>
                         <tr>
                             <th scope="col">Categories</th>
                             <th scope="col">Renueves</th>
                             <th scope="col">Percentage of assistance</th>
                         </tr>
                     </thead>
-                    <tbody class="table-group-divider">
+                    <tbody id="pastEventsTableBody" class="table-group-divider">
                         <tr>
                             <th></th>
                             <td></td>
@@ -194,6 +199,9 @@
         </div>
     </footer>
 
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/stats.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
